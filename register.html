@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/css_general.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="loader-icon"></div>
+    </div>
+
+    <header id="header" class="header-log">
+        <div class="container">
+            <div class="box-content flex row center space-between h100">
+
+                <div class="header__logo ">
+                    <a href="">
+                        <figure>
+                            <img src="images/logo-platzi.png" alt="logo">
+                        </figure>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="login">
+            <div class="container">
+                <div class="box-content relative">
+                    <div class="form-login flex col">
+                        <h2 class="title-section">Crea tu cuenta</h2>
+                        <form action="" class="formulario">
+                            <div class="field-form">
+                                <input aria-label="Nombres" type="text" class="input-field" name="" id="name_reg" placeholder="Nombres" required>
+                            </div>
+
+                            <div class="field-form">
+                                <input aria-label="Correo electrónico" type="email" class="input-field" name="" id="email_reg" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="field-form">
+                                <input aria-label="Contraseña" type="password" class="input-field" name="" id="pass_reg" placeholder="Contraseña" required>
+                            </div>
+                            <div class="field-form">
+                                <input aria-label="submit" type="submit" class="redireccionar" value="Registrarse">
+                            </div>
+                        </form>
+
+                        <div class="register">
+                            <a href="#" class="">¿Ya estas registrado? Inicia Sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="box-content ">
+                <ul class="n-list-style flex h100 center">
+                    <li>
+                        <a href="">Términos de uso</a>
+                    </li>
+                    <li>
+                        <a href="">Declaración de privacidad</a>
+                    </li>
+                    <li>
+                        <a href="">Centro de ayuda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            const loader = document.getElementById('loader');
+            loader.style.visibility = "hidden";
+            loader.style.opacity = "0";
+        }
+    </script>
+</body>
+
+</html>

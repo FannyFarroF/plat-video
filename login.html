@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/css_general.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="loader-icon"></div>
+    </div>
+
+    <header id="header" class="header-log">
+        <div class="container">
+            <div class="box-content flex row center space-between h100">
+
+                <div class="header__logo ">
+                    <a href="">
+                        <figure>
+                            <img src="images/logo-platzi.png" alt="logo">
+                        </figure>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="login">
+            <div class="container">
+                <div class="box-content relative">
+                    <div class="form-login flex col">
+                        <h2 class="title-section">Iniciar sesión</h2>
+                        <form action="" class="formulario">
+                            <div class="field-form">
+                                <input aria-label="email" type="email" class="input-field" name="" id="email_log" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="field-form">
+                                <input aria-label="password" type="password" class="input-field" name="" id="pass_log" placeholder="Contraseña" required>
+                            </div>
+                            <div class="field-form">
+                                <input aria-label="submit" type="submit" class="redireccionar">
+                            </div>
+                        </form>
+                        <div class="login-remember-me flex">
+                            <div class="field-form flex center">
+                                <label for="rec_not" class="content-input center">
+                                    <input type="checkbox" name="" id="rec_not"> Recibir Notificaciones
+                                    <i></i>
+                                </label>
+                            </div>
+                            <div class="field-form flex center">
+                                <a href="" class="">¿Olvidaste tu contraseña?</a>
+                            </div>
+                        </div>
+                        <div class="register">
+                            <a href="#" class="">¿Aún no tienes cuenta? Regístrate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="box-content ">
+                <ul class="n-list-style flex h100 center">
+                    <li>
+                        <a href="">Términos de uso</a>
+                    </li>
+                    <li>
+                        <a href="">Declaración de privacidad</a>
+                    </li>
+                    <li>
+                        <a href="">Centro de ayuda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        window.onload = function() {
+            const loader = document.getElementById('loader');
+            loader.style.visibility = "hidden";
+            loader.style.opacity = "0";
+        }
+    </script>
+</body>
+
+</html>
